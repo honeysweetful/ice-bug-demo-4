@@ -1,0 +1,40 @@
+{
+  "name": "flow-manager",
+  "version": "1.0.0",
+  "description": "A ice.js project.",
+  "dependencies": {
+    "@ant-design/icons": "4.x",
+    "@ice/runtime": "^1.0.0",
+    "antd": "4.x",
+    "localforage": "^1.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-use": "^17.4.0",
+    "tailwind": "^4.0.0",
+    "zustand": "^4.4.1"
+  },
+  
+  "devDependencies": {
+    "@applint/spec": "^1.2.3",
+    "@ice/app": "^3.0.0",
+    "@types/node": "^18.11.17",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "eslint": "^8.35.0",
+    "stylelint": "^15.2.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "ice start",
+    "build": "npx tailwindcss -i src/tailwind.css -o src/tailwind.build.css --minify && ice build",
+    "tailwind": "npx tailwindcss -i src/tailwind.css -o src/tailwind.build.css --watch",
+    "eslint": "eslint ./src --cache --ext .js,.jsx,.ts,.tsx",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"src/**/*.{css,scss,less}\" --cache",
+    "stylelint:fix": "npm run stylelint -- --fix"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "git@github.com:ice-lab/react-materials.git"
+}
